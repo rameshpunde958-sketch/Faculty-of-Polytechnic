@@ -17,17 +17,19 @@ def even_odd(n)
     print(even_odd(b))
     print(even_odd((c))
     #problem3
- a=4
- b=9
- c=19
- def divisible_by_3(e)
-   if e % 3 == 0:
-     return "divisible by 3"
-   else:
-     return "not divisible by 3"
-     print(divisible_by_3(a))
-     print(divisible_by_3(b))
-     print(divisible_by_3(c))
+ a = 4
+b = 9
+c = 19
+
+def divisible_by_3(e):
+    if e % 3 == 0:
+        return "Divisible by 3"
+    else:
+        return "Not divisible by 3"
+
+print(divisible_by_3(a))
+print(divisible_by_3(b))
+print(divisible_by_3(c))
 
 #problem4
  a = [1, 2, 3]
@@ -38,16 +40,18 @@ def print_elements(lst):
 
 print_elements(a)
 #problem 5
-i=1
-L=[1,2,3,4,5,6]
+i = 1
+L = [1, 2, 3, 4, 5, 6]
 L.pop(0)
 L.pop(1)
 L.pop(2)
 print(L)
-#problem 6
-i=0
-L=[1,2,3,4,5,6]
+
+# Problem 6
+i = 0
+L = [1, 2, 3, 4, 5, 6]
 L.pop(4)
 L.pop(2)
 L.pop(0)
-print(L)    
+print(L)
+
