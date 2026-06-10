@@ -1,0 +1,19 @@
+num=10
+unum=int(input("guess a num bet 1 to 10="))
+if(num<10):
+    print("low")
+elif(num>10):
+    print("high")
+else:
+    print("correct guess")
+
+#problem2
+def rectangle(l,b):
+
+    a=l*b
+    
+    return(a)
+l=int(input("enter length:"))
+b=int(input ("enter breadth:"))
+result=rectangle(l,b)
+print (result )
