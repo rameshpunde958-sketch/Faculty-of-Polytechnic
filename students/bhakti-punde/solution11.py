@@ -13,3 +13,18 @@ def print_triangle(height):
         print("*"*row)
         row=row+1
 print_triangle(10)
+#problem3
+SECRET = 42
+def play_game():
+    tries = 0
+    while True:
+        guess = int(input("Guess the number (1-100): "))
+        tries += 1
+        if guess > SECRET:
+            print("Too high!")
+        elif guess < SECRET:
+            print("Too low!")
+        else:
+            print(f"Correct! You got it in {tries} tries.")
+            break
+play_game()
