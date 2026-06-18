@@ -1,11 +1,37 @@
-def ask_mark(prompt):
+#cp2.1
+def ask_prompt(p):
+ while true:
+    p=input("enter...")
+    if p=="":
+        print("cant be empty")
+    else:
+            return (p)
+ ask_prompt()
+#cp2.2
+def marks(i):
     while True:
-        text = input(prompt)
-        if not text.isdigit():
-            print("Please enter a whole number.")
-            continue
-        mark = int(text)
-        if 0 <= mark <= 100:
-            return mark
+        i=int(input("enter marks"))
+        if i.isdigit():
+            return (i)
+            print("enter correct marks ")
+            marks()
+#cp2.3
+def ask_yes_no(q):
+    while True:
+        a = input (q)
+        if a == ("y"):
+            return True
+        elif a == ("n"):
+            return False
         else:
-            print("Mark must be between 0 and 100.")
+            print('Please type "y" or "n".')
+result = ask_yes_no("Add another subject? (y/n): ")
+print(result)      
+#Cp2.4
+def collect_one_subject():
+    name = ask_text("Subject name: ")
+    m1 = ask_mark("  Mark 1 (0-100): ")
+    m2 = ask_mark("  Mark 2 (0-100): ")
+    m3 = ask_mark("  Mark 3 (0-100): ")
+
+    return (name, m1, m2, m3)
